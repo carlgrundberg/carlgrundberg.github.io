@@ -2,6 +2,6 @@
 
 Personal homepage based on single page bootstrap template by @mdo.
 
-## Release log 
+## Release log
 
 2014-05-16 First release.
