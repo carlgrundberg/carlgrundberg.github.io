@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5acff4f1-e753-4ada-9b83-1b3b817e5363" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cover.css" afterPath="$PROJECT_DIR$/cover.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="whatimdoing.iws" />
@@ -52,8 +51,8 @@
       <file leaf-file-name="cover.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cover.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5997693" vertical-offset="0" max-vertical-offset="3880">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.538639" vertical-offset="1433" max-vertical-offset="3940">
+              <caret line="95" column="14" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -196,7 +195,15 @@
       <created>1400253343868</created>
       <updated>1400253343868</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Page can be more than 100%">
+      <created>1400253418171</created>
+      <updated>1400253418171</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Correct height">
+      <created>1400253725034</created>
+      <updated>1400253725034</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -242,7 +249,9 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Updated links" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated links" />
+    <MESSAGE value="Page can be more than 100%" />
+    <MESSAGE value="Correct height" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct height" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -285,8 +294,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cover.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5997693" vertical-offset="0" max-vertical-offset="3880">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.538639" vertical-offset="1433" max-vertical-offset="3940">
+          <caret line="95" column="14" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
           <folding />
         </state>
       </provider>
