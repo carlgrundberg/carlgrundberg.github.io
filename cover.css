@@ -26,7 +26,6 @@ a:hover {
 
 html,
 body {
-    min-height: 100%;
     background-color: #333;
 }
 body {
@@ -94,6 +93,10 @@ body {
 }
 
 @media (min-width: 768px) {
+    html, body {
+        height: 100%;
+    }
+
     .masthead-brand {
         float: left;
     }
