@@ -135,13 +135,19 @@ body {
 }
 
 .cover-list a {
-    border-bottom: 1px dashed white;
+    border-bottom: 1px dashed rgba(255,255,255,.75);
+    color: rgba(255,155,10,0.85);
 }
 
 .cover-list a:hover {
     text-decoration: none;
-    color: rgba(255,255,255,.75)
+    color: rgba(255,255,255,1)
 }
+
+.cover h1 img {
+    margin-bottom: 20px;
+}
+
 /*
  * Footer
  */
@@ -178,9 +184,8 @@ body {
     }
 
     .cover h1 {
-        margin-bottom: 100px;
+        margin-bottom: 80px;
     }
-
 }
 
 @media (min-width: 992px) {
