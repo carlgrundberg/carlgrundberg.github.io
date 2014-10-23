@@ -43,52 +43,52 @@
 
                 <h1 class="cover-heading">
                     <img src="http://www.gravatar.com/avatar/6a86c86de722f1869eada6ba8889b683.jpg?s=150" class="img-rounded"><br/>
-                    Hello, my name is Carl Grundberg.<br/>I'm a developer and I'm addicted to frameworks.
+                    Hello, my name is Carl Grundberg.<br/><span id="whatsup"></span>
                 </h1>
 
                 <div class="row">
                     <div class="col-sm-4">
-                        <h2>I gladly work with</h2>
+                        <h2>@ <a href="http://www.menmo.se">menmo</a></h2>
                         <ul class="cover-list">
                             <li>
-                                <a href="http://getbootstrap.com/">Bootstrap</a> everywhere
+                                <a href="http://getbootstrap.com/">Bootstrap</a>
                             </li>
                             <li>
-                                <a href="http://wordpress.org">Wordpress</a> at <a
-                                    href="http://www.newsme.com">NewsMe</a>
+                                <a href="http://nodejs.org/">Node</a>
                             </li>
                             <li>
-                                <a href="http://knockoutjs.com/">Knockout</a> at <a href="http://www.hittahem.se">HittaHem.se</a>
+                                <a href="http://wordpress.org">Wordpress</a>
                             </li>
                             <li>
-                                <a href="https://angularjs.org/">Angular</a> and <a
-                                    href="http://expressjs.com/">Express</a> at <a href="http://arran.gr">Arran.gr</a>
+                                <a href="http://knockoutjs.com/">Knockout</a>
                             </li>
-
                             <li>
-                                My colleagues at <a href="http://www.menmo.se">Menmo</a>
+                                <a href="http://gruntjs.com/">Grunt</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-sm-4">
-                        <h2>I'm trying out</h2>
+                        <h2>@ home</h2>
                         <ul class="cover-list">
                             <li>
-                                <a href="http://meteor.com">Meteor</a> with <a
-                                    href="http://pivoter.menmo.se">Pivoter</a>
+                                <a href="https://angularjs.org/">Angular</a>
                             </li>
                             <li>
-                                <a href="http://emberjs.com">Ember</a> and <a href="http://fortunejs.com/">Fortune</a>
-                                with <a href="https://github.com/carlgrundberg/burgercount">Burgercount</a>
+                                <a href="http://expressjs.com/">Express</a>
                             </li>
                             <li>
-                                <a href="http://www.sencha.com/products/touch/">Sencha Touch</a> with <a
-                                    href="https://github.com/carlgrundberg/buildtime">Buildtime</a>
+                                <a href="http://mongoosejs.com/">Mongoose</a>
+                            </li>
+                            <li>
+                                <a href="http://meteor.com">Meteor</a>
+                            </li>
+                            <li>
+                                <a href="http://emberjs.com">Ember</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-sm-4">
-                        <h2>I can't wait to try out</h2>
+                        <h2>watching</h2>
                         <ul class="cover-list">
                             <li>
                                 <a href="https://famo.us">Famo.us</a>
@@ -98,6 +98,9 @@
                             </li>
                             <li>
                                 <a href="https://ghost.org/">Ghost</a>
+                            </li>
+                            <li>
+                                <a href="http://www.sencha.com/products/touch/">Sencha Touch</a>
                             </li>
                         </ul>
                     </div>
@@ -126,8 +129,19 @@
     }
 </script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <!--<script src="js/bootstrap.min.js"></script>-->
+<script>
+    $(function() {
+        $.getJSON('https://github.com/carlgrundberg.json?callback=?', function(data) {
+            if(data.length > 0) {
+                   $('#whatsup').html('My lastest effort was put on <a href="[url]" target="_blank">[name]</a>'
+                        .replace('[url]', data[0].repository.url)
+                        .replace('[name]', data[0].repository.name));
+            }
+        });
+    });
+</script>
 </body>
 </html>

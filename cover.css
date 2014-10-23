@@ -3,10 +3,14 @@
  */
 
 /* Links */
-a,
+a {
+    border-bottom: 1px dashed rgba(255,255,255,.75);
+    color: rgba(255,155,10,0.85);
+}
 a:focus,
 a:hover {
-    color: #fff;
+    text-decoration: none;
+    color: rgba(255,255,255,1)
 }
 
 /* Custom default button */
@@ -125,13 +129,14 @@ body {
 
 .cover-list {
     margin: 30px 0;
-    text-align: left;
+    padding: 0;
     list-style: none;
     font-size: 1.6em;
 }
 
 .cover-list li {
     margin: 10px 0;
+    text-align: center;
 }
 
 .cover-list a {
