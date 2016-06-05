@@ -80,11 +80,13 @@
 <!--<script src="js/bootstrap.min.js"></script>-->
 <script>
     $(function() {
-        $.get('http://cors.io/?u=https://untappd.com/rss/user/carlgrundberg?key=d4e2abf295f75c2794398c3a8f6065b5', function(data) {
+        $.get('https://carlgrundberg-cors.herokuapp.com/https://untappd.com/rss/user/carlgrundberg?key=d4e2abf295f75c2794398c3a8f6065b5', function(data) {
             if(data) {
                 var $xml = $(data);
                 var $item = $xml.find("item:first");
-                $('#untappd').html($item.find("title").text().replace('Carl G. is', 'I\'m'));
+                $('#untappd').html('I just had a <a href="[url]" target="_blank">[beer]</a>'
+                        .replace('[url]', $item.find("link").text())
+                        .replace('[beer]', $item.find("title").text().replace('Carl G. is drinking a ', '')));
             }
         });
         $.getJSON('https://api.github.com/users/carlgrundberg/events/public?callback=?', function(res) {
