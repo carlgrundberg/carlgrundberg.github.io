@@ -120,6 +120,7 @@ body {
 
 .cover h1 {
     margin-bottom: 40px;
+    font-size: 24px;
 }
 
 .cover .btn-lg {
@@ -190,6 +191,7 @@ body {
 
     .cover h1 {
         margin-bottom: 80px;
+        font-size: 36px;
     }
 }
 
