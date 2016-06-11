@@ -86,7 +86,7 @@
                 var $item = $xml.find("item:first");
                 $('#untappd').html('I just had a <a href="[url]" target="_blank">[beer]</a>'
                         .replace('[url]', $item.find("link").text())
-                        .replace('[beer]', $item.find("title").text().replace('Carl G. is drinking a ', '')));
+                        .replace('[beer]', $item.find("title").text().replace('Carl G. is drinking an ', '')));
             }
         });
         $.getJSON('https://api.github.com/users/carlgrundberg/events/public?callback=?', function(res) {
