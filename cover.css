@@ -123,6 +123,9 @@ body {
     font-size: 24px;
 }
 
+.cover p {
+    margin-bottom: 20px;
+}
 .cover .btn-lg {
     padding: 10px 20px;
     font-weight: bold;

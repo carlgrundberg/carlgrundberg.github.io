@@ -84,16 +84,19 @@
             if(data) {
                 var $xml = $(data);
                 var $item = $xml.find("item:first");
-                $('#untappd').html('I just had a <a href="[url]" target="_blank">[beer]</a>'
+                $('#untappd').html('Latest beer: <a href="[url]" target="_blank">[beer]</a>'
                         .replace('[url]', $item.find("link").text())
-                        .replace('[beer]', $item.find("title").text().replace('Carl G. is drinking a ', '')));
+                        .replace('[beer]', $item.find("title").text().replace(/Carl G. is drinking an? /, '')));
             }
         });
         $.getJSON('https://api.github.com/users/carlgrundberg/events/public?callback=?', function(res) {
-            if(res.data.length > 0) {
-                   $('#github').html('My lastest effort was put on <a href="[url]" target="_blank">[name]</a>.'
-                        .replace('[url]', res.data[0].repo.url)
-                        .replace('[name]', res.data[0].repo.name.split('/')[1]));
+            event = res.data.filter(function(e) {
+                return e.type == "PushEvent";
+            }).shift();
+            if(event) {
+                   $('#github').html('Latest push: <a href="[url]" target="_blank">[name]</a>'
+                        .replace('[url]', event.repo.url)
+                        .replace('[name]', event.repo.name.split('/')[1]));
             }
         });
     });
