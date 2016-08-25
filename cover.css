@@ -57,7 +57,7 @@ body {
 
 /* Padding for spacing */
 .inner {
-    padding: 30px;
+    padding: 20px;
 }
 
 
@@ -65,15 +65,14 @@ body {
  * Header
  */
 .masthead-brand {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    display: none;
 }
 
 .masthead-nav > li {
     display: inline-block;
 }
 .masthead-nav > li + li {
-    margin-left: 20px;
+    margin-left: 5px;
 }
 .masthead-nav > li > a {
     padding-right: 0;
@@ -177,6 +176,13 @@ body {
         position: fixed;
         top: 0;
     }
+
+    .masthead-brand {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: block;
+    }
+
     .mastfoot {
         position: fixed;
         bottom: 0;
@@ -196,6 +202,10 @@ body {
         margin-bottom: 80px;
         font-size: 36px;
     }
+
+    .inner {
+        padding: 30px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -203,5 +213,9 @@ body {
     .mastfoot,
     .cover-container {
         width: 992px;
+    }
+
+    .masthead-nav li + li {
+        margin-left: 20px;
     }
 }
